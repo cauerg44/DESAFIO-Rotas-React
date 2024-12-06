@@ -6,6 +6,7 @@
   --color-bg-tertiary: #C7C7C7;
 
   --color-font-primary: #FFFFFF;
+  --color-font-secondary: #000000;
 }
 
 * {
@@ -28,4 +29,17 @@ a, a:hover {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.home-title-section {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dflex {
+  display: flex;
 }
