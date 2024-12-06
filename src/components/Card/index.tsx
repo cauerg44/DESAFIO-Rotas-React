@@ -1,18 +1,19 @@
+import { NavLink } from 'react-router-dom'
 import './styles.css'
 
 export default function Card() {
 
     return (
         <div className='card-container'>
-            <div className='card-item'>
+            <NavLink to="/products/computers" className={({ isActive }) => isActive ? "card-item option-active" : "card-item"}>
                 Computadores
-            </div>
-            <div className='card-item'>
+            </NavLink>
+            <NavLink to="/products/eletronics" className={({ isActive }) => isActive ? "card-item option-active" : "card-item"}>
                 Eletrônicos
-            </div>
-            <div className='card-item'>
+            </NavLink>
+            <NavLink to="/products/books" className={({ isActive }) => isActive ? "card-item option-active" : "card-item"}>
                 Livros
-            </div>
+            </NavLink>
         </div>
     )
 }
