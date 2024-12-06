@@ -1,0 +1,26 @@
+header {
+    height: 70px;
+    background-color: var(--color-bg-primary);
+    color: var(--color-font-primary);
+    display: flex;
+    align-items: center;
+}
+
+.header-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu-item {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.menu-active {
+    font-weight: 700;
+}

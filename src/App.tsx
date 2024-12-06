@@ -1,11 +1,16 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './routes/Home'
 
 export default function App() {
 
   return (
-    <>
-      <h1>Bom dia</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} >
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
