@@ -6,6 +6,8 @@ import ProductsPage from './routes/Home/ProductsPage'
 import Computers from './routes/Home/Computers'
 import Eletronics from './routes/Home/Eletronics'
 import Books from './routes/Home/Books'
+import About from './routes/About'
+import NotFound from './routes/NotFound'
 
 export default function App() {
 
@@ -20,6 +22,8 @@ export default function App() {
             <Route path="eletronics" element={<Eletronics />} />
             <Route path="books" element={<Books />} />
           </Route>
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
