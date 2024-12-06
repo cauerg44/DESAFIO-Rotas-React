@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Card from "../../../components/Card";
 
 export default function ProductsPage() {
@@ -9,6 +10,7 @@ export default function ProductsPage() {
                     <div className="mt30">
                         <Card />
                     </div>
+                    <Outlet />
                 </div>
             </section>
         </main>
